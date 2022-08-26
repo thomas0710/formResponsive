@@ -12,4 +12,125 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    min-height: 600px;
+    padding: 80px 0;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    background-color: #a3bded;
+    background-repeat: no-repeat;
+}
+
+.main
+{
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0365));
+    overflow: hidden;
+    padding: .7rem;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: .6em;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    animation: show 1.5s ease-in-out;
+    -webkit-animation: show 1.5s ease-in-out;
+}
+
+@keyframes show
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+/* Validar por que no se puede adapta de tamaño en menos de 350px */
+.main__figure
+{
+    min-width: 320px;
+    overflow: hidden;
+    border-radius: 1em;
+    display: flex;
+}
+
+.main__img
+{
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+}
+
+.main__contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.main__form
+{
+    display: grid;
+    justify-items: center;
+    gap: 1.5rem;
+}
+
+.main__input
+{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.main__input--send
+{
+    background-color: #dc3f31;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main__title
+{
+    font-size: 2.3rem;
+}
+
+.main__paragraph
+{
+    margin: .3em 0;
+}
+
+.main__icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.main__socials
+{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-template-columns: max-content;
+    gap: 1em;
+}
+
+.main__link
+{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .6rem 1.5rem;
+}
+
+.main__link:hover
+{
+    background-color: #fff;
 }
