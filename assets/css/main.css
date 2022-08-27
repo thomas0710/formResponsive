@@ -33,6 +33,7 @@ body
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     animation: show 1.5s ease-in-out;
     -webkit-animation: show 1.5s ease-in-out;
+    max-width: 1000px;
 }
 
 @keyframes show
